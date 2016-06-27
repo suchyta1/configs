@@ -5,22 +5,36 @@ ServerAliveInterval 120
 ServerAliveCountMax 10
 GSSAPIAuthentication yes
 
-Host home sith rhea eos titan
+
+# ORNL
+Host home
 	User esuchyta
-	HostName %h.ccs.ornl.gov
+	HostName home.ccs.ornl.gov
 
-Host cosmos7 cosmos13 cosmos16 cosmos17 cosmos18 cosmos20 cosmos21 cosmos22 cosmos23 cosmos30 cosmos31 cosmos41 cosmos42 cosmos43 cosmos44 cosmos50 cosmos51 
-        User suchyta.1
-        HostName %h.mps.ohio-state.edu
+Host sith
+	User esuchyta
+	HostName sith.ccs.ornl.gov
 
-Host edison cori
+Host rhea
+	User esuchyta
+	HostName rhea.ccs.ornl.gov
+
+Host titan
+	User esuchyta
+	HostName titan.ccs.ornl.gov
+
+
+# NERSC
+Host cori
         user esuchyta
-        hostname %h.nersc.gov
+        hostname edison.nersc.gov
 
-Host laptop
-	User ericsuchyta
-	HostName drl-dhcp127.sas.upenn.edu
+Host cori
+        user esuchyta
+        hostname cori.nersc.gov
 
+
+# UPenn
 Host folio
         user esuchyta
         hostname folio.sas.upenn.edu
@@ -28,6 +42,78 @@ Host folio
 Host upennhtml
         user esuchyta
         hostname 128.91.234.109
+
+
+# Ohio State
+Host cosmos7
+        User suchyta.1
+        HostName cosmos7.mps.ohio-state.edu
+
+Host cosmos13
+        User suchyta.1
+        HostName cosmos13.mps.ohio-state.edu
+
+Host cosmos16
+        User suchyta.1
+        HostName cosmos16.mps.ohio-state.edu
+
+Host cosmos17
+        User suchyta.1
+        HostName cosmos17.mps.ohio-state.edu
+
+Host cosmos18
+        User suchyta.1
+        HostName cosmos18.mps.ohio-state.edu
+
+Host cosmos20
+        User suchyta.1
+        HostName cosmos20.mps.ohio-state.edu
+
+Host cosmos21
+        User suchyta.1
+        HostName cosmos21.mps.ohio-state.edu
+
+Host cosmos22
+        User suchyta.1
+        HostName cosmos22.mps.ohio-state.edu
+
+Host cosmos23
+        User suchyta.1
+        HostName cosmos23.mps.ohio-state.edu
+
+Host cosmos30
+        User suchyta.1
+        HostName cosmos30.mps.ohio-state.edu
+
+Host cosmos31
+        User suchyta.1
+        HostName cosmos31.mps.ohio-state.edu
+
+Host cosmos41
+        User suchyta.1
+        HostName cosmos41.mps.ohio-state.edu
+
+Host cosmos42
+        User suchyta.1
+        HostName cosmos42.mps.ohio-state.edu
+
+Host cosmos43
+        User suchyta.1
+        HostName cosmos43.mps.ohio-state.edus
+
+Host cosmos44
+        User suchyta.1
+        HostName cosmos44.mps.ohio-state.edu
+
+Host cosmos50
+        User suchyta.1
+        HostName cosmos50.mps.ohio-state.edu
+
+Host cosmos51 
+        User suchyta.1
+        HostName cosmos51.mps.ohio-state.edu
+
+
 
 #BNL stuff
 ####################################################################################
