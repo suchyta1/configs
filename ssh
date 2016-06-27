@@ -25,7 +25,7 @@ Host titan
 
 
 # NERSC
-Host cori
+Host edison
         user esuchyta
         hostname edison.nersc.gov
 
