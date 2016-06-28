@@ -19,6 +19,10 @@ Host rhea
 	User esuchyta
 	HostName rhea.ccs.ornl.gov
 
+Host eos
+	User esuchyta
+	HostName eos.ccs.ornl.gov
+
 Host titan
 	User esuchyta
 	HostName titan.ccs.ornl.gov
