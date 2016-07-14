@@ -16,6 +16,7 @@ set hlsearch			"highlight search results
 set number			"Line numbers
 set laststatus=2		"Always show status bar
 set backspace=indent,eol,start 	"Usual backspacing
+set foldlevelstart=99		"Don't fold by default
 
 set backupdir=~/.vim/tmp,~/.tmp,~/tmp,/var/tmp,/tmp 	"where to save backup files"
 set directory=~/.vim/tmp,~/.tmp,~/tmp,/var/tmp,/tmp	"where to save swap files"
