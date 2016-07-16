@@ -34,3 +34,8 @@ syntax on
 autocmd BufNewFile,BufRead *.tex set spell							"turn on spelling when using tex file
 :inoremap kj <ESC>										"kj typed quicklyexits insert mode
 cnoreabbrev <expr> Noh ((getcmdtype() is# ':' && getcmdline() is# 'Noh')?('noh'):('Noh'))	"Noh means same thing as noh
+
+" Remember position in file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
