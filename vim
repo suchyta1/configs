@@ -27,6 +27,12 @@ filetype off
 call pathogen#infect()
 call pathogen#helptags()
 filetype plugin indent on
+
+
+set tabstop=4  		" show existing tab with 4 spaces width
+set shiftwidth=4 	" when indenting with '>', use 4 spaces width
+set expandtab 		" On pressing tab, insert 4 spaces
+
 syntax on
 let g:pymode_rope_complete_on_dot = 0
 let g:pymode_options_colorcolumn = 0
