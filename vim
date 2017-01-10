@@ -41,7 +41,7 @@ let g:pymode_rope_lookup_project = 0
 
 let g:pymode_options_colorcolumn = 0
 let g:pymode_options_max_line_length = 1000
-let g:pymode_lint_ignore = "E231,E201,E202"
+let g:pymode_lint_ignore = "E231,E201,E202,E303,W391"
 
 
 " Other random stuff I wanted
