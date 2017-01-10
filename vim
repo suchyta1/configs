@@ -28,14 +28,21 @@ call pathogen#infect()
 call pathogen#helptags()
 filetype plugin indent on
 syntax on
+
+let g:pymode_rope = 0
 let g:pymode_rope_complete_on_dot = 0
+let g:pymode_rope_lookup_project = 0
+
 let g:pymode_options_colorcolumn = 0
 let g:pymode_options_max_line_length = 1000
 let g:pymode_lint_ignore = "E231,E201,E202"
 
 
 " Other random stuff I wanted
-autocmd BufNewFile,BufRead *.tex set spell							"turn on spelling when using tex file
+
+"autocmd BufNewFile,BufRead *.tex set spell							"turn on spelling when using tex file
+"let g:tex_conceal=""
+
 :inoremap kj <ESC>										"kj typed quicklyexits insert mode
 cnoreabbrev <expr> Noh ((getcmdtype() is# ':' && getcmdline() is# 'Noh')?('noh'):('Noh'))	"Noh means same thing as noh
 
