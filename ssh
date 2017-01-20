@@ -6,17 +6,6 @@ ServerAliveCountMax 10
 GSSAPIAuthentication yes
 
 
-Host coritunnel
-	HostName titan.ccs.ornl.gov
-	User esuchyta
-	LocalForward localhost:2224 cori.nersc.gov:22
-
-Host corit
-        user esuchyta
-        hostname localhost
-	Port 2224
-
-
 # ORNL
 Host home
 	User esuchyta

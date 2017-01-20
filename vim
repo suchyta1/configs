@@ -31,7 +31,7 @@ filetype plugin indent on
 
 set tabstop=4  		" show existing tab with 4 spaces width
 set shiftwidth=4 	" when indenting with '>', use 4 spaces width
-set expandtab 		" On pressing tab, insert 4 spaces
+"set expandtab 		" On pressing tab, insert 4 spaces
 
 syntax on
 
@@ -41,7 +41,7 @@ let g:pymode_rope_lookup_project = 0
 
 let g:pymode_options_colorcolumn = 0
 let g:pymode_options_max_line_length = 1000
-let g:pymode_lint_ignore = "E231,E201,E202,E303,W391"
+let g:pymode_lint_ignore = "E231,E201,E202,E265,E303,W391"
 
 
 " Other random stuff I wanted
