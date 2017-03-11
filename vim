@@ -43,6 +43,11 @@ let g:pymode_options_colorcolumn = 0
 let g:pymode_options_max_line_length = 1000
 let g:pymode_lint_ignore = "E231,E201,E202,E265,E303,W391"
 
+let fortran_free_source=1
+let fortran_have_tabs=1
+let fortran_more_precise=1
+let fortran_do_enddo=1
+
 
 " Other random stuff I wanted
 
