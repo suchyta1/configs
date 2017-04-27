@@ -1,0 +1,21 @@
+# Ignore everything
+*
+
+# Don't ignore directories
+!*/
+
+
+# Don't ingore files with extensions
+!*.*
+
+
+# Extensions we don't want
+
+
+# Directories we don't want
+
+
+# Files we don't want
+
+
+# Extensionless we DO want

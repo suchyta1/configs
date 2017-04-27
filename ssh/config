@@ -1,0 +1,73 @@
+ForwardX11 yes
+ForwardX11Trusted yes
+ForwardAgent yes
+ServerAliveInterval 120
+ServerAliveCountMax 10
+GSSAPIAuthentication yes
+
+
+######################################################
+# ORNL
+######################################################
+
+Host home
+	User esuchyta
+	HostName home.ccs.ornl.gov
+
+Host sith
+	User esuchyta
+	HostName sith.ccs.ornl.gov
+
+Host rhea
+	User esuchyta
+	HostName rhea.ccs.ornl.gov
+
+Host eos
+	User esuchyta
+	HostName eos.ccs.ornl.gov
+
+Host titan
+	User esuchyta
+	HostName titan.ccs.ornl.gov
+
+
+######################################################
+# NERSC
+######################################################
+
+Host edison
+	user esuchyta
+	hostname edison.nersc.gov
+
+Host cori
+	user esuchyta
+	hostname cori.nersc.gov
+
+
+######################################################
+# UPENN
+######################################################
+
+Host folio
+	user esuchyta
+	hostname folio.sas.upenn.edu
+
+Host upennhtml
+	user esuchyta
+	hostname 128.91.234.109
+
+
+######################################################
+# BNL
+######################################################
+
+# Gateway for tunneling
+Host rssh.rhic.bnl.gov
+	LocalForward localhost:2224 astro.rcf.bnl.gov:22
+	LocalForward localhost:2225 tutti.astro.bnl.gov:22
+
+Host astro bnl bnl-astro
+	HostName localhost
+	User esuchyta
+	Port 2224
+
