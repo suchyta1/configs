@@ -1,9 +1,9 @@
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == idioms.function ==
 /* FIXME */
-|?TYPE| |?FUNCTION_NAME|()
+|?TYPE| |?FUNCTION_NAME|(/* FIXME */)
 {
-return FIXME;
+/* return FIXME; */
 }
 $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == idioms.function-static ==
