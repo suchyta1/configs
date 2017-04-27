@@ -30,4 +30,5 @@ pget https://github.com/vim-airline/vim-airline.git $pdir/vim-airline
 if [[ ! -d $pdir/c.vim ]]; then
 	pget https://github.com/vim-scripts/c.vim.git 	$pdir/c.vim	
 	echo "set foldmethod=syntax" >> $pdir/c.vim/plugin/c.vim
+	cp c.idioms.template $pdir/c.vim/c-support/templates/c.idioms.template
 fi
