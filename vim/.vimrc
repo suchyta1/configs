@@ -48,6 +48,15 @@ let fortran_more_precise=1
 let fortran_do_enddo=1
 
 
+" Spelling
+let g:lexical#spelllang = ['en_us']
+augroup lexical
+  autocmd!
+  autocmd FileType markdown,mkd,text call lexical#init()
+  autocmd FileType tex call lexical#init({ 'spellfile': ['~/.vim/spell/en.utf-8.add'] })
+augroup END
+let g:tex_comment_nospell=1
+
 
 " The rest of the file is a bit more advanced of Vim customizations
 
@@ -81,8 +90,4 @@ cnoreabbrev <expr> Noh ((getcmdtype() is# ':' && getcmdline() is# 'Noh')?('noh')
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
-
-
-"autocmd BufNewFile,BufRead *.tex set spell							"turn on spelling when using tex file
-"let g:tex_conceal=""
 
