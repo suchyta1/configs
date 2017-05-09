@@ -49,11 +49,9 @@ let fortran_do_enddo=1
 
 
 " Spelling
-let g:lexical#spelllang = ['en_us']
 augroup lexical
   autocmd!
-  autocmd FileType markdown,mkd,text call lexical#init()
-  autocmd FileType tex call lexical#init({ 'spellfile': ['~/.vim/spell/en.utf-8.add'] })
+  autocmd FileType markdown,mkd,text,tex call lexical#init({'spelllang': ['en_us'], 'spellfile': ['~/.vim/spell/en.utf-8.add']})
 augroup END
 let g:tex_comment_nospell=1
 
