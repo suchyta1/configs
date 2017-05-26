@@ -48,7 +48,7 @@ let fortran_more_precise=1
 let fortran_do_enddo=1
 
 
-" Spelling
+" Spell checking for certain file types
 augroup lexical
   autocmd!
   autocmd FileType markdown,mkd,text,tex call lexical#init({'spelllang': ['en_us'], 'spellfile': ['~/.vim/spell/en.utf-8.add']})
@@ -56,14 +56,31 @@ augroup END
 let g:tex_comment_nospell=1
 
 
-" The rest of the file is a bit more advanced of Vim customizations
+" Remember position in file. (Go back to where you were after at least a soft close)
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
+
+" Disable ex mode
+nnoremap Q <nop>
+
+
+" Key/command remapping type things
+" The xclip copying in/out of vim to command line is cool, but I've never gotten used to using xclip.
+" xclip can be installed with:   apt-get install xclip
+
+
+" When in insert mode, paste whatever is in your desktop environment's clipboard, i.e. from ctrl-v (not xclip), with ctrl-v
+:map! <C-v> <C-r>"
+
+
+" Noh means same thing as noh
+cnoreabbrev <expr> Noh ((getcmdtype() is# ':' && getcmdline() is# 'Noh')?('noh'):('Noh'))	
 
 
 " kj typed quickly exits insert mode
 :inoremap kj <ESC>
-
-" Noh means same thing as noh
-cnoreabbrev <expr> Noh ((getcmdtype() is# ':' && getcmdline() is# 'Noh')?('noh'):('Noh'))	
 
 
 " Use xclip to copy into vim from command line
@@ -79,13 +96,4 @@ cnoreabbrev <expr> Noh ((getcmdtype() is# ':' && getcmdline() is# 'Noh')?('noh')
 " xclip -o
 :command -nargs=+ C !echo -e <q-args> | sed 's//\n/g' | xclip 	
 
-
-" When in insert mode, paste whatever is in your desktop environment's clipboard, i.e. from ctrl-v (not xclip), with ctrl-v
-:map! <C-v> <C-r>"
-
-
-" Remember position in file
-if has("autocmd")
-  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-endif
 
