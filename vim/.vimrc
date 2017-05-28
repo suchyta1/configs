@@ -14,7 +14,6 @@ set hlsearch					" highlight search results
 set laststatus=2				" Always show status bar
 set backspace=indent,eol,start 	" Usual backspacing
 set foldlevelstart=99			" Don't fold by default
-"set number						" Line numbers. I go back and forth if I want this one
 
 set backupdir=~/.vim/tmp,~/.tmp,~/tmp,/var/tmp,/tmp 	" where to save backup files
 set directory=~/.vim/tmp,~/.tmp,~/tmp,/var/tmp,/tmp		" where to save swap files
@@ -39,6 +38,8 @@ let g:pymode_rope_lookup_project = 0
 let g:pymode_options_colorcolumn = 0
 let g:pymode_options_max_line_length = 1000					" I don't want a line max
 let g:pymode_lint_ignore = "E231,E201,E202,E265,E303,W391"	" Ignore irrelevant errors/warnings
+autocmd FileType python setlocal nonumber					" line numbers on by default
+autocmd FileType python setlocal wrap						" wrapping off by default
 
 
 " Fortran tweaks
@@ -57,9 +58,7 @@ let g:tex_comment_nospell=1
 
 
 " Remember position in file. (Go back to where you were after at least a soft close)
-if has("autocmd")
-  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-endif
+autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 
 " Disable ex mode
