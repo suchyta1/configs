@@ -55,6 +55,8 @@ augroup lexical
   autocmd FileType markdown,mkd,text,tex call lexical#init({'spelllang': ['en_us'], 'spellfile': ['~/.vim/spell/en.utf-8.add']})
 augroup END
 let g:tex_comment_nospell=1
+" let g:Imap_UsePlaceHolders=0
+let g:Imap_FreezeImap=1
 
 
 " Remember position in file. (Go back to where you were after at least a soft close)
