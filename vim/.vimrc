@@ -42,6 +42,11 @@ autocmd FileType python setlocal nonumber					" line numbers on by default
 autocmd FileType python setlocal wrap						" wrapping off by default
 
 
+autocmd FileType yaml setlocal tabstop=2
+autocmd FileType yaml setlocal shiftwidth=2
+autocmd FileType yaml setlocal expandtab
+
+
 " Fortran tweaks
 let fortran_free_source=1
 let fortran_have_tabs=1
