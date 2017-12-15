@@ -30,6 +30,10 @@ Host titan
 	User esuchyta
 	HostName titan.ccs.ornl.gov
 
+Host summitdev
+	User esuchyta
+	HostName summitdev.ccs.ornl.gov
+
 
 ######################################################
 # NERSC
@@ -43,6 +47,11 @@ Host cori
 	user esuchyta
 	hostname cori.nersc.gov
 
+Host cori-http
+	user esuchyta
+	hostname cori.nersc.gov
+	ProxyCommand corkscrew snowman.ornl.gov 3128 %h %p
+
 
 ######################################################
 # UPENN
@@ -52,9 +61,19 @@ Host folio
 	user esuchyta
 	hostname folio.sas.upenn.edu
 
+Host folio-http
+	user esuchyta
+	hostname folio.sas.upenn.edu
+	ProxyCommand corkscrew snowman.ornl.gov 3128 %h %p
+
 Host upennhtml
 	user esuchyta
 	hostname 128.91.234.109
+
+Host upennhtml-http
+	user esuchyta
+	hostname 128.91.234.109
+	ProxyCommand corkscrew snowman.ornl.gov 3128 %h %p
 
 
 ######################################################
