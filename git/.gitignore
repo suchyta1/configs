@@ -1,12 +1,18 @@
+###############################################################################
+####  SHOULD NOT MODIFY THIS SECTION  
+####  Effectively, we ignore everything without an extension by default 
+###############################################################################
+
 # Ignore everything
 *
 
 # Don't ignore directories
 !*/
 
-
 # Don't ingore files with extensions
 !*.*
+
+###############################################################################
 
 
 # Extensions we don't want
