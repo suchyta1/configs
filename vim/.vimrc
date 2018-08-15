@@ -32,6 +32,7 @@ syntax on
 
 
 " Python tweaks
+let g:pymode_lint = 0										" I don't really  understand what rope is, but it didn't work for me
 let g:pymode_rope = 0										" I don't really  understand what rope is, but it didn't work for me
 let g:pymode_rope_complete_on_dot = 0
 let g:pymode_rope_lookup_project = 0
@@ -50,14 +51,14 @@ autocmd FileType yaml setlocal expandtab
 " Fortran tweaks
 let fortran_free_source=1
 let fortran_have_tabs=1
-let fortran_more_precise=1
+let fortran_more_precise=0
 let fortran_do_enddo=1
 
 
 " Spell checking for certain file types
 augroup lexical
   autocmd!
-  autocmd FileType markdown,mkd,text,tex call lexical#init({'spelllang': ['en_us'], 'spellfile': ['~/.vim/spell/en.utf-8.add']})
+  autocmd FileType markdown,mkd,tex call lexical#init({'spelllang': ['en_us'], 'spellfile': ['~/.vim/spell/en.utf-8.add']})
 augroup END
 let g:tex_comment_nospell=1
 " let g:Imap_UsePlaceHolders=0
