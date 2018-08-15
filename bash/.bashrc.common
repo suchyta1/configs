@@ -5,7 +5,7 @@
 source $HOME/git-completion.bash
 
 # Use Liquid Prompt (only in interactive shells, not from a script or from scp)
-[[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
+#[[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
 
 # Needed to colorize gnu-screen
 force_color_prompt=yes
