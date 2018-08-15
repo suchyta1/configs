@@ -28,6 +28,7 @@ pget https://github.com/klen/python-mode.git 		$pdir/python-mode
 pget https://github.com/vim-airline/vim-airline.git $pdir/vim-airline
 pget https://github.com/vim-latex/vim-latex.git		$pdir/vim-latex
 pget https://github.com/reedes/vim-lexical.git		$pdir/vim-lexical
+pget https://github.com/JamshedVesuna/vim-markdown-preview.git $pdir/vim-markdown-preview
 
 if [[ ! -d $pdir/c.vim ]]; then
 	pget https://github.com/vim-scripts/c.vim.git 	$pdir/c.vim	
