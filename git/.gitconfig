@@ -3,3 +3,4 @@
 	name = Eric Suchyta
 [core]
 	editor = /usr/bin/vim
+	pager = cat
