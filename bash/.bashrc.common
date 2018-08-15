@@ -1,5 +1,5 @@
 # Get rid of stupid noises when attempting to tab complete
-set bell-style none
+#set bell-style none
 
 # Enable tab completion for git
 source $HOME/git-completion.bash
