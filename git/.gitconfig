@@ -4,3 +4,8 @@
 [core]
 	editor = /usr/bin/vim
 	pager = cat
+[format]
+	pretty = oneline
+[log]
+	decorate = auto
+	abbrevCommit = true
