@@ -22,3 +22,23 @@ for name in "bash/.bashrc.common" "git/.gitconfig" "screen/.screenrc" "vim/.vimr
 done
 
 cd $source_dir/vim && ./pathogen-setup.sh && cd $p_dir
+
+
+if [ "$1" = "mac" ]; then
+	lfile=".latexmkrc.mac"
+	mdir=".matplotlib"
+else
+	lfile=".latexmkrc"
+	mdir=".config/matplotlib"
+fi
+
+if [ ! -e ~/.latexmkrc ]; then
+	ln -s $source_dir/latex/$lfile ~/.latexmkrc
+fi
+
+if [ ! -d ~/$mdir ]; then
+	mkdir ~/$mdir
+fi
+if [ ! -e ~/$mdir/matplotlibrc ]; then
+	ln -s $source_dir/matplotlib/suchyta.style ~/$mdir/matplotlibrc
+fi
