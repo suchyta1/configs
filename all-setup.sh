@@ -4,7 +4,7 @@ p_dir=$(pwd)
 source_dir=$(cd $(dirname ${BASH_SOURCE[0]}) && pwd)
 
 if [ ! -e ~/git-completion.bash ]; then
-	wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -O ~/git-completion.bash
+	wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -O ~/.git-completion.bash
 fi
 
 if [ ! -d ~/.ssh ]; then

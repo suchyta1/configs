@@ -2,7 +2,7 @@
 #set bell-style none
 
 # Enable tab completion for git
-source $HOME/git-completion.bash
+source ~/.git-completion.bash
 
 # Use Liquid Prompt (only in interactive shells, not from a script or from scp)
 #[[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
