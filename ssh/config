@@ -10,6 +10,10 @@ GSSAPIAuthentication yes
 # ORNL
 ######################################################
 
+Host login1
+	User eqs
+	HostName login1.ornl.gov
+
 Host home
 	User esuchyta
 	HostName home.ccs.ornl.gov
