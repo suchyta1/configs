@@ -38,6 +38,10 @@ Host summitdev
 	User esuchyta
 	HostName summitdev.ccs.ornl.gov
 
+Host summit
+	User esuchyta
+	HostName summit.olcf.ornl.gov
+
 
 ######################################################
 # NERSC
