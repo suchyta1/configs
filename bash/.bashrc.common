@@ -11,5 +11,5 @@ source ~/.git-completion.bash
 force_color_prompt=yes
 
 # Aliases so colors show up on commands I use
-alias ls="ls --color=auto"
+alias ls="ls -lh --color=auto"
 alias grep="grep --color=auto"
